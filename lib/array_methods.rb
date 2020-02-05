@@ -21,12 +21,13 @@ end
 
 def find_min_value(array)
   i = 0;
-  max = array[0]
+  min = array[0]
 
   while i < array.length
-    if array[i] > max
-			max = array[i]
+    if array[i] < min
+			min = array[i]
   	end
 		i += 1
   end
+	return min
 end
